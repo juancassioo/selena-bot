@@ -1,8 +1,6 @@
 package br.com.juan.factory;
 
-import br.com.juan.model.CorFluxo;
 import java.awt.AWTException;
-import java.awt.Color;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
