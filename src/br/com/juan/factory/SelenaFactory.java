@@ -100,18 +100,6 @@ public class SelenaFactory implements Selena {
     }
 
     @Override
-    public void salvarPasso() {
-        robot.mouseMove(1237, 235);
-        robot.mousePress(MouseEvent.getMaskForButton(MouseEvent.BUTTON1));
-        robot.mouseMove(1233, 732);
-        robot.mouseRelease(MouseEvent.getMaskForButton(MouseEvent.BUTTON1));
-
-        robot.mouseMove(1157, 900);
-        robot.mousePress(MouseEvent.getMaskForButton(MouseEvent.BUTTON1));
-        robot.mouseRelease(MouseEvent.getMaskForButton(MouseEvent.BUTTON1));
-    }
-
-    @Override
     public void proximoProduto() {
         moverEClicar(1010, 250);
     }
@@ -161,6 +149,6 @@ public class SelenaFactory implements Selena {
             robot.delay(100);
         }
 
-    }    
+    }
 
 }

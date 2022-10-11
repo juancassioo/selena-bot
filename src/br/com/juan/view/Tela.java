@@ -16,7 +16,7 @@ public class Tela extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btn_iniciar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblMinimize = new javax.swing.JLabel();
@@ -28,11 +28,16 @@ public class Tela extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("INICIAR");
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btn_iniciar.setBackground(new java.awt.Color(0, 0, 0));
+        btn_iniciar.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
+        btn_iniciar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_iniciar.setText("INICIAR");
+        btn_iniciar.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btn_iniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_iniciarActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/juan/view/bot.png"))); // NOI18N
 
@@ -46,20 +51,16 @@ public class Tela extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGap(210, 210, 210)
-                            .addComponent(jLabel2)
-                            .addGap(61, 61, 61))
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(jLabel3)
-                            .addGap(51, 51, 51)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(61, 61, 61))))
+                            .addComponent(jLabel2))
+                        .addComponent(jLabel3))
+                    .addComponent(btn_iniciar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(61, 61, 61))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_iniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -143,6 +144,11 @@ public class Tela extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_lblExitMouseClicked
 
+    private void btn_iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iniciarActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btn_iniciarActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -176,7 +182,7 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_iniciar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
