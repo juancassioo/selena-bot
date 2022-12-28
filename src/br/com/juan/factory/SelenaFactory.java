@@ -150,5 +150,17 @@ public class SelenaFactory implements Selena {
         }
 
     }
+    
+    public void tab(){
+        robot.delay(200);
+        robot.keyPress(KeyEvent.VK_TAB);
+        robot.keyRelease(KeyEvent.VK_TAB);
+    }
+    
+    public void espaco(){
+        robot.delay(200);
+        robot.keyPress(KeyEvent.VK_SPACE);
+        robot.keyRelease(KeyEvent.VK_SPACE);
+    }
 
 }

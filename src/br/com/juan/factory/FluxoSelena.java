@@ -8,8 +8,6 @@ public class FluxoSelena extends SelenaFactory {
     
     public void fluxoPrincipal() {
         
-        int contador = 0;
-        
         // SELECIONA O PRODUTO
         delay(2000);
         moverEClicar(1653, 292);
@@ -193,6 +191,11 @@ public class FluxoSelena extends SelenaFactory {
         delay(500);
         moverEClicar(1879, 1029);
         moverEClicar(1819, 1005);
+    }
+    
+    
+    private void chamarProximoPasso(){
+        /// utilizar o tab para mover os próximos elementos
     }
 
 }

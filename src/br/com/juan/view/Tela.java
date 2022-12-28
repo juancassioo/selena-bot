@@ -146,7 +146,6 @@ public class Tela extends javax.swing.JFrame {
 
     private void btn_iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iniciarActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_btn_iniciarActionPerformed
 
     public static void main(String args[]) {
